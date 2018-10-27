@@ -21,5 +21,19 @@ public class FraudNotification {
 		}
 		
 		System.out.println(Arrays.toString(arr));
+		System.out.println(selectionSort(arr, days));
+	}
+	
+	public static int selectionSort(int arr[], int days) {
+		int min = 0;
+		for(int i = 0; i < arr.length - 1; i++) {
+			if(arr[i] < arr[i+1]) {
+				min = arr[i];
+			} else {
+				min = arr[i+1];
+			}
+			
+		}
+		return min;
 	}
 }
